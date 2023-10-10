@@ -1,0 +1,10 @@
+## Title: DataExport
+## Description: Exports Data from ESO into SavedVariables
+## Author: @RizzleMaTizzle
+## APIVersion: 101039
+## AddOnVersion: 1
+## IsLibrary: False
+## SavedVariables: DataExportSavedVariables
+## DependsOn: LibChatMessage LibDebugLogger>=180 LibSlashCommander
+
+DataExport.lua
