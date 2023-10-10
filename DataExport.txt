@@ -5,6 +5,6 @@
 ## AddOnVersion: 1
 ## IsLibrary: False
 ## SavedVariables: DataExportSavedVariables
-## DependsOn: LibChatMessage LibDebugLogger>=180 LibSlashCommander
+## DependsOn: LibChatMessage LibDebugLogger>=180 LibSlashCommander LibTableFunctions-1.0
 
 DataExport.lua
