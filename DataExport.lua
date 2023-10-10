@@ -2,6 +2,7 @@
 DE_NS = {
   ADDON_NAME = "DataExport",
   SHORT_ADDON_NAME = "DE",
+  DB
 };
 
 -- Global Libraries
@@ -52,6 +53,16 @@ function DE_NS.Initialize()
  DE_NS.LOGGER:Info(initialMsg)
  DE_NS.CHAT:Print(initialMsg)
  DE_NS.RegisterSlashCommands()
+  
+ --Default values for the SavedVariables
+ local defaults = {
+  testAmount      = 1,
+  testAmount2    = 2,
+  }
+
+  -- Fetch the saved variables
+  DE_NS.DB = ZO_SavedVars:NewAccountWide("DataExportSavedVariables", SV_VERSION_NAME, nil, defaults)
+
 end
 
 --- Startup
